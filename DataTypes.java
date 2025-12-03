@@ -1,0 +1,21 @@
+// Java is a STRONGLY TYPED language; you have to DEFINE/DECLARE a variable 
+// you have to declare its DATA TYPE  
+
+class DataTypeExamples {
+
+    int myInt = 42; 
+    double myDouble = 189.75; // double the ammount of bytes used to store the data, double of int 
+    char myChar = 'Q'; 
+    boolean myBool = false; 
+
+}
+
+public class DataTypes {
+    public static void main(String[] args) {
+
+        DataTypeExamples dt = new DataTypeExamples(); 
+
+        System.out.println("myInt: " + dt.myInt); 
+
+    }
+}
