@@ -16,6 +16,9 @@ public class DataTypes {
         DataTypeExamples dt = new DataTypeExamples(); 
 
         System.out.println("myInt: " + dt.myInt); 
+        System.out.println("myDouble: " + dt.myDouble); 
+        System.out.println("myChar: " + dt.myChar); 
+        System.out.println("myBool: " + dt.myBool); 
 
     }
 }
