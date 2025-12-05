@@ -6,6 +6,10 @@ class Calculator {
         return a + b; 
     } 
 
+    double add(double a, double b) {
+        return a + b; 
+    }
+
     int subtract(int a, int b) {
         return a - b; 
     } 
@@ -35,6 +39,9 @@ public class Math1 {
         Calculator calc = new Calculator(); 
         
         System.out.println(calc.add(6,7)); 
+
+        System.out.println(calc.add(6,7)); 
+
         System.out.println(calc.subtract(6, 7)); 
         System.out.println(calc.multiply(6, 7)); 
         System.out.println(calc.divide(6, 7)); 
