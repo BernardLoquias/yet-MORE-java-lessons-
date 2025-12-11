@@ -6,6 +6,12 @@ class Scoreboard {
 
     int playerXP =  0; 
     int playerLevel = 0; 
+    int playerHealth = 1000; 
+    String playerName;
+
+    public Scoreboard(String user) {
+        playerName = user;
+    }
 
     void gainXP(int amount ) {
         playerXP = playerXP + amount; //accumilation, long way of doing it
@@ -13,12 +19,12 @@ class Scoreboard {
     }
 
     void heal() {
-        playerXP += 50; //compound addition, compound accumilation 
+        playerHealth += 50; //compound addition, compound accumilation 
 
     }
 
     void damage() {
-        playerXP -= 10; //compound subtraction
+        playerHealth -= 10; //compound subtraction
 
     }
 
@@ -37,6 +43,11 @@ class Scoreboard {
     
     }
 
+    void gainHealth(int amount) {
+        playerHealth = playerHealth + amount; 
+    
+    } 
+
 
 }
 
@@ -54,6 +65,8 @@ public class Math2 {
         player1.levelUp();
         player1.levelDown();
 
+        player1.gainHealth(5); 
+
         player2.gainXP(600); 
         player2.gainXP(700); 
         player2.heal();
@@ -61,7 +74,8 @@ public class Math2 {
         player2.levelUp(); 
         player2.levelUp();
         player2.levelDown();
-        
+
+        player2.gainHealth(5); 
 
 
         Scoreboard.gameName();
