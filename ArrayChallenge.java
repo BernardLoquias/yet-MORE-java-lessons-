@@ -64,14 +64,12 @@ public class ArrayChallenge {
         }
 
         if (xWins && oWins) {
-            System.out.println("Both players win (invalid game).");
+            System.out.println("DRAW!");
         } else if (xWins) {
             System.out.println("X wins!");
         } else if (oWins) {
             System.out.println("O wins!");
-        } else {
-            System.out.println("Cat’s game (draw).");
-        }
+        } 
 
         
 
