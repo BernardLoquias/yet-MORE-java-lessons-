@@ -87,7 +87,7 @@ public class GetSetChallenge {
 
         player1.setUsername("pineappleghost333");
         player1.setID(101);
-        player1.setRank("Hacker");
+        player1.setRank("Gold");
 
         System.out.println("Player 1 Username: " + player1.getUsername());
         System.out.println("Player 1 ID: " + player1.getID());
@@ -96,7 +96,7 @@ public class GetSetChallenge {
 
         player2.setUsername("ironmouse6741");
         player2.setID(202);
-        player2.setRank("Novice");
+        player2.setRank("Copper");
 
         System.out.println("Player 2 Username: " + player2.getUsername());
         System.out.println("Player 2 ID: " + player2.getID());
@@ -114,7 +114,7 @@ public class GetSetChallenge {
         int userInputID = input.nextInt();
         input.nextLine(); 
 
-        System.out.print("Enter a rank (N00b, Bruh, Novice, Hacker, Gawdlike): ");
+        System.out.print("Enter a rank (Copper, Iron, Gold, Diamond, Netharite): ");
         String userInputRank = input.nextLine();
 
         player3.setUsername(userInputName);
@@ -129,18 +129,23 @@ public class GetSetChallenge {
 
         //challenge 3
 
-        if (player3.getRank().equals("N00b")) {
-    System.out.println("You are just getting started!");
-} 
-else if (player3.getRank().equals("Apprentice")) {
-    System.out.println("You are learning the ropes!");
-}
-else if (player3.getRank().equals("Hacker")) {
-    System.out.println("You are one powerful hacker!");
-}
-else if (player3.getRank().equals("Master")) {
-    System.out.println("You are a true master of the game!");
-}
-else {
-    System.out.println("Unknown rank. Keep progressing!");
+        if (player3.getRank().equals("Copper")) {
+            System.out.println("You are just getting started!");
+        } 
+        else if (player3.getRank().equals("Iron")) {
+            System.out.println("You are learning the ropes!");
+        }
+        else if (player3.getRank().equals("Gold")) {
+            System.out.println("You are rising through the ranks!");
+        }
+        else if (player3.getRank().equals("Diamond")) {
+            System.out.println("You are one powerful player!");
+        }
+        else if (player3.getRank().equals("Netharite")) {
+            System.out.println("You are a true master of the game!");
+        }
+        else {
+            System.out.println("Unknown rank. Keep progressing!");
+        }
+    }
 }
