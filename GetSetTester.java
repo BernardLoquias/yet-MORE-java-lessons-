@@ -72,7 +72,7 @@ class GetSet{
 
 //challenge 1
 
-public class GetSetTester {
+public class GetSetChallenge {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
